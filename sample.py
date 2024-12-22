@@ -1,5 +1,4 @@
 import duckdb
-import json
 
 con = duckdb.connect("test/test.db")
 
