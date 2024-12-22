@@ -254,7 +254,7 @@ def load_strava() -> None:
 
     pipeline = dlt.pipeline(
         pipeline_name="strava_datastack",
-        destination='duckdb',
+        destination=dlt.destinations.duckdb("test/test.db"),
         dataset_name="strava",
         progress="log",
     )
