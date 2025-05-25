@@ -15,9 +15,17 @@ wheels/
 # ignore logs
 *.log
 
+# ignore vscode
+.vscode/
+
 # ignore duckdb
 *.duckdb
 *.wal
+
+# ignore dbt
+transform/target/
+transform/dbt_packages/
+transform/logs/
 
 # ignore misc
 .DS_Store

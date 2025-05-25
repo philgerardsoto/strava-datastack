@@ -1,0 +1,15 @@
+# DuckDB config reference:
+strava_transform:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      schema: dbt_sandbox
+      threads: 1
+      path: "{{ env_var('DUCKDB_PATH') }}"
+    
+    prod:
+      type: duckdb
+      schema: analytics
+      threads: 1
+      path: "{{ env_var('DUCKDB_PATH') }}"

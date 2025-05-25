@@ -87,7 +87,7 @@ To get around these issues, we will create a new refresh token with the proper s
 shown below is an example `secrets.toml` for the strava connection secrets:
 ```toml
 [sources.strava.credentials]
-access_token_url = "https://www.strava.com/oath/token"
+access_token_url = "https://www.strava.com/oauth/token"
 client_id = "<your_client_id>"
 client_secret = "<your_client_secret>"
 refresh_token = "<your_refresh_token>"
